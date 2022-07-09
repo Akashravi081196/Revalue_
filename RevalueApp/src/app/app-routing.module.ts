@@ -7,6 +7,8 @@ import { RegisterComponent } from './components/register/register.component';
 import { AuthGuard } from './services/auth.guard';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
+import { LandingComponent } from './landing/landing.component';
+
 
 
 
@@ -14,8 +16,17 @@ const newLocal = 'Contact';
 const routes: Routes = [
 	{
 		path: '',
-		component: HomeComponent
+		component: HomeComponent,
+		
 	},
+
+	{
+		path:'landing',
+		component: LandingComponent,
+		pathMatch:"full"
+	
+	},
+
 	{
 		path: 'login',
 		component: LoginComponent,

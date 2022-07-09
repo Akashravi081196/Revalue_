@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RegisterComponent } from './components/register/register.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
+import { LandingComponent } from './landing/landing.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { ContactComponent } from './contact/contact.component';
     RegisterComponent,
     AboutUsComponent,
     ContactComponent,
+    LandingComponent,
   ],
   imports: [
     BrowserModule,
