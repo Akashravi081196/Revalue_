@@ -7,7 +7,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { AuthGuard } from './services/auth.guard';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
-import { LandingComponent } from './landing/landing.component';
+
 
 
 
@@ -20,13 +20,7 @@ const routes: Routes = [
 		
 	},
 
-	{
-		path:'landing',
-		component: LandingComponent,
-		pathMatch:"full"
 	
-	},
-
 	{
 		path: 'login',
 		component: LoginComponent,

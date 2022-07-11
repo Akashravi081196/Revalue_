@@ -39,4 +39,8 @@ export class HomeComponent implements OnInit {
     
     this.router.navigate(['contact'])
   }
+
+  onClick() {
+    this.router.navigate(['register'])
+  }
 }

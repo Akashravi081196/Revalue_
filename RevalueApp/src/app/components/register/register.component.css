@@ -1,4 +1,5 @@
 
+@import "~bootstrap/dist/css/bootstrap.css";
 
 .box{
 
@@ -59,7 +60,7 @@ input[type="submit"]
     border: none;
     outline: none;
     height: 40px;
-    background: #2196f3;
+    background: #069818;
     color: #fff;
     font-size: 18px;
     border-radius: 20px;
@@ -89,8 +90,12 @@ span:hover
 
 .One{
     height: 550px;;
+    background-image: url(../../../assets/images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .btn login{
     margin-left: 5px;
 }
+

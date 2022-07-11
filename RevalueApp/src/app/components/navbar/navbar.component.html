@@ -4,7 +4,7 @@
       <li class="big-screens">
         <a class="btn login" href="#">Home</a>
         <button  class="btn login"  (click)="onAbout()">About Us</button>
-        <button  class="btn login" (click)="onClick()">Register</button>
+        <button  *ngIf="!loginService.isLoggedIn()" class="btn login" (click)="onClick()">Register</button>
         <button *ngIf="!loginService.isLoggedIn()" class="btn login" (click)="onLogin()">Log In</button>
         <button *ngIf="loginService.isLoggedIn()" class="btn register" (click)="onDashBoard()">Dashboard</button>
         <button *ngIf="loginService.isLoggedIn()" class="btn login" (click)="onLogout()">Log Out</button>

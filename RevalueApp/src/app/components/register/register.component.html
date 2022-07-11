@@ -1,57 +1,57 @@
 <html>
- <head>
-   <title>Register Form Design</title>
- </head>
  <body>
     <div class="One">
-        <h1> Regsister here</h1>
+    
+        <h1> REGSITER</h1>
 
-        <form method="POST">
-          <h3>Sign Up</h3>
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
           <div class="form-group">
-            <label for="email">Email Address</label>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              name="email"
-              placeholder="Enter email"
-            />
+          <label>First Name</label>
+          <input type="text" formControlName="firstName" class="form-control" [ngClass]="{ 'is-invalid': submitted}" />
+          <!-- <div *ngIf="submitted && registerForm.controls.FirstName.errors" class="text-danger">
+          <div *ngIf="registerForm.controls.FirstName.errors.required">First Name is required</div>
+          </div> -->
           </div>
           <div class="form-group">
-            <label for="firstName">First Name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="firstName"
-              name="firstName"
-              placeholder="Enter first name"
-            />
+          <label>Last Name</label>
+          <input type="text" formControlName="lastName" class="form-control" [ngClass]="{ 'is-invalid': submitted }" />
+          <!-- <div *ngIf="submitted && registerForm.controls.lastName.errors" class="text-danger">
+          <div *ngIf="registerForm.controls.lastName.errors.required">Last Name is required</div>
+          </div> -->
           </div>
           <div class="form-group">
-            <label for="password1">Password</label>
-            <input
-              type="password"
-              class="form-control"
-              id="password1"
-              name="password1"
-              placeholder="Enter password"
-            />
+            <label>User Name</label>
+            <input type="text" formControlName="userName" class="form-control" [ngClass]="{ 'is-invalid': submitted }" />
+            <!-- <div *ngIf="submitted && registerForm.controls.lastName.errors" class="text-danger">
+            <div *ngIf="registerForm.controls.lastName.errors.required">Last Name is required</div>
+            </div> -->
+            </div>
+          <div class="form-group">
+          <label>Email</label>
+          <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted }" />
+          <!-- <div *ngIf="submitted && registerForm.controls.email.errors" class="text-danger">
+          <div *ngIf="registerForm.controls.email.errors.required">Email is required</div>
+          <div *ngIf="registerForm.controls.email.errors.email">Email must be a valid email address</div>
+          </div> -->
           </div>
           <div class="form-group">
-            <label for="password2">Password (Confirm)</label>
-            <input
-              type="password"
-              class="form-control"
-              id="password2"
-              name="password2"
-              placeholder="Confirm password"
-            />
+          <label>Password</label>
+          <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted }"  />
+          <!-- <div *ngIf="submitted && registerForm.controls.password.errors" class="text-danger">
+          <div *ngIf="registerForm.controls.password.errors.required">Password is required</div>
+          <div *ngIf="registerForm.controls.password.errors.minlength">Password must be at least 6 characters</div>
+          </div> -->
           </div>
-          <br />
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
+          <div class="form-group">
+          <button (click)="OnRegister()"class="btn btn-primary">Register</button>
+          </div>
+          <div>
+            <button style="margin-top: 7px;" (click)="onLogin()">Already Registered?</button>
+          </div>
+          </form>
+          </div>
+          <!-- </div>
+          </div> -->
  </body>
 
 </html>

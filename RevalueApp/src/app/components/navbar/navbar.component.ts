@@ -47,6 +47,6 @@ export class NavbarComponent implements OnInit {
   }
 
   onTouch(){
-    this.router.navigate(['landing'])
+    this.router.navigate(['home'])
   }
 }

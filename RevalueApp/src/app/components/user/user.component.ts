@@ -17,8 +17,6 @@ export class UserComponent implements OnInit {
     this.retriveData();
   }
 
-  url="";
-
   retriveData() {
     let username = localStorage.getItem("username");
     console.log(username)
@@ -84,15 +82,4 @@ export class UserComponent implements OnInit {
       );
     }
   }
-
-  // onselectFile(a){
-  //   if(a.target.files){
-  //     var reader = new FileReader();
-  //     reader.readAsDataURL(a.target.files[0]);
-  //     reader.onload=(event:any)=>{
-  //       this.url=event.target.result;
-  //     }
-  //   }
-
-  }
-
+}

@@ -3,5 +3,12 @@
 .About{
    height: 500px; 
    color: black;
-   
+
+}
+
+*{   
+   background-image: url(../../../assets/images/Second.jpg);
+   height: fit-content;
+   background-repeat: no-repeat;
+   background-size:auto;
 }

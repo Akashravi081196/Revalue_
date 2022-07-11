@@ -250,3 +250,12 @@ button:hover {
   border: 1px solid #4caf50;
   border-radius: 5px;
 }
+
+.One{
+  height: 500px;
+}
+
+.container img{
+  height: 800px;
+  width: 100%;
+}

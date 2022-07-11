@@ -10,6 +10,11 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'REVALUEAPP';
 
+  // // someHTML ='Some HTML <script> alert("hello"); </script>'
+  // injectedhtml = 'this is <scrip> not a safe </script>'
+
+  myURL = 'javascript:alert("hello")';
+
   constructor(private router: Router) { }
 
   onAbout() {

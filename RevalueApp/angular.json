@@ -100,15 +100,5 @@
   },
   "cli": {
     "analytics": "9768ec13-8029-49ae-8a6a-6a81a392d502"
-  },
-
-  {
-    "name": "my-angular-project",
-    "scripts": {
-      "start": "node run-env"
-    },
-    "devDependencies": {
-      "dotenv": "^8.2.0"
-    }
   }
 }
